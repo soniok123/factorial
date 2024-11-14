@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const numberInput = document.getElementById('numberInput');
     const result = document.getElementById('result');
     const error = document.getElementById('error');
-    const alphabet = document.getElementById( 'alphabet');
-
+  const factorialButton = document.getElementById('factorialButton');
+    const calculatorButton = document.getElementById('calculatorButton');
     
     numberInput.addEventListener('keydown', function(event) {
      
