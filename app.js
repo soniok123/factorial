@@ -36,7 +36,23 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-  alphabat= "abcdefghijklmnopqrstuvwxyz".split('');
+     factorialButton.addEventListener('keydown', function(event) {
+         if (event.key === 'Enter')  {
+                 const value = numberInput.value;
+                  if (!isNaN(value) && parseInt(value) >= 0) { 
+                    const factorial = calculateFactorial(parseInt(value));    
+                result.textContent = `Factorial of ${value} is ${factorial}`; 
+            } 
+        } 
+    });
+
+    calculatorButton.addEventListener('keydown', function(event) {
+         if (event.key === 'Enter') { 
+            result.textContent = `calculator of ${value} is ${value}`;
+            window.open('https://www.calculator.net', '_blank'); 
+        }
+         });
+
 
 
     function calculateFactorial(num) {
